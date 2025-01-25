@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { Contact } from '../contact.model';
 
-
 @Component({
   selector: 'cms-contact-list',
   standalone: false,
-  
   templateUrl: './contact-list.component.html',
   styleUrl: './contact-list.component.css'
 })
@@ -16,7 +14,7 @@ export class ContactListComponent {
       'R. Kent Jackson',
       'jacksonk@byui.edu',
       '208-496-3771',
-      '../../assets/images/jacksonk.jpg',
+      'https://raw.githubusercontent.com/EnmaSantos/cms/a29f5cef72516895d8dc22f5d04fc0c9850a14c7/src/assets/images/barzeer.jpg',  
       null
     ),
     new Contact(
@@ -24,14 +22,8 @@ export class ContactListComponent {
       'Rex Barzee',
       'barzeer@byui.edu',
       '208-496-3768',
-      '../../assets/images/barzeer.jpg',
+      'https://raw.githubusercontent.com/EnmaSantos/cms/a29f5cef72516895d8dc22f5d04fc0c9850a14c7/src/assets/images/jacksonk.jpg',   
       null
     )
   ];
-
-  constructor() { }
-
-  ngOnInit(): void { }
 }
-
-
